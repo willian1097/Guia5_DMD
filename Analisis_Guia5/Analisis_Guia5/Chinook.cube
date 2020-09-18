@@ -1,0 +1,389 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="aecde51e-bca0-4633-9669-d9ccb9349b25" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Chinook</ID>
+  <Name>Chinook</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="3abc222d-e1bd-44b9-bf75-854fa7f922ed">
+      <ID>Album</ID>
+      <Name>Album</Name>
+      <DimensionID>Album</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6d8ddd1b-cbcc-410b-a35c-94adb853736f">
+          <AttributeID>Album Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7719b614-b265-4417-a175-d9697e793f77">
+          <AttributeID>Artist Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3c0fa09d-6eac-4de1-aa88-929d41e10afd">
+      <ID>Genre</ID>
+      <Name>Genre</Name>
+      <DimensionID>Genre</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2566127f-fc51-44a4-be11-a745f2d73c57">
+          <AttributeID>Genre Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="87486571-6728-48f0-803f-bb0ada7649ce">
+      <ID>Media Type</ID>
+      <Name>Media Type</Name>
+      <DimensionID>Media Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="edabd605-9eb2-47c1-8b4b-b3ccdc451712">
+          <AttributeID>Media Type Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3db9a6db-be06-4dc8-a4a3-58195f8cf137">
+      <ID>Playlist</ID>
+      <Name>Playlist</Name>
+      <DimensionID>Playlist</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6c4243a3-80ad-44b3-80ab-e5da2f811164">
+          <AttributeID>Playlist Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="aa24ba2d-cae1-4492-8b70-c8fc59e150d6">
+      <ID>Invoice</ID>
+      <Name>Invoice</Name>
+      <DimensionID>Invoice</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c909578e-43a1-4c01-bd1e-0333dd54cb3f">
+          <AttributeID>Invoice Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f351daa8-0f36-4075-9a16-f677960264b1">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="309e2c01-e3b0-4e73-8bdb-ae159f8ae212">
+      <ID>Customer</ID>
+      <Name>Customer</Name>
+      <DimensionID>Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6d758ba9-70bd-4f16-a58b-be116bd2987f">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c91f0298-da21-4c53-8282-6e7680a97789">
+          <AttributeID>Support Rep Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="230ae90b-5cd2-4cf6-90b5-43b82b8041a0">
+      <ID>Artist</ID>
+      <Name>Artist</Name>
+      <DimensionID>Artist</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ac1f378b-1ce7-496b-9b34-6944681f33d5">
+          <AttributeID>Artist Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="39dc264d-c032-4e3a-bbfa-4405309215c4">
+      <ID>Track</ID>
+      <Name>Track</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="db7fcdab-c1c5-4c13-950a-8a989b027f56">
+          <ID>Unit Price</ID>
+          <Name>Unit Price</Name>
+          <Source dwd:design-time-name="ab100d92-d7a9-46f8-a384-1350e7be0450">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="734f1143-37a1-43a8-a9b7-799af70f7919">
+              <TableID>dbo_Track</TableID>
+              <ColumnID>UnitPrice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="31a563ec-5efa-4f57-b67b-ce8ca71f0fb9">
+          <ID>Recuento Track</ID>
+          <Name>Recuento Track</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a2a67ebe-d888-44fe-9d8b-d06873b1b231">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0f8c3c96-bab4-42e7-8612-1b4c9d59d0a1">
+              <TableID>dbo_Track</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="76629989-1dd8-497e-b838-2abf4c82786a">
+          <CubeDimensionID>Album</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3d44435d-c886-4039-a2ff-e74757220640">
+              <AttributeID>Album Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a887eb23-c1d5-4601-9ee3-8ec81e35e7eb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ad42983-f197-40ad-95ec-422278ba8d99">
+                    <TableID>dbo_Track</TableID>
+                    <ColumnID>AlbumId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a08e38e1-64db-4045-862d-6bf0c2e37d37">
+          <CubeDimensionID>Genre</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3cad4e47-9744-4c37-af0f-618f7f962ae9">
+              <AttributeID>Genre Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c4ecb457-465f-4a79-8fea-079b82e97236">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e47fc86c-6f5d-4aa7-8bf7-b14cc770e1a5">
+                    <TableID>dbo_Track</TableID>
+                    <ColumnID>GenreId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7a0f543c-8370-4043-8cd2-509e3f558ccb">
+          <CubeDimensionID>Media Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47bd5eab-0d8f-4e24-aed1-66d7f76782de">
+              <AttributeID>Media Type Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f6537262-094e-4bd4-9a78-0c9342c159de">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37d63257-a811-4da7-8470-33bde764c9aa">
+                    <TableID>dbo_Track</TableID>
+                    <ColumnID>MediaTypeId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="5ee05d6b-83bd-4b6d-a40d-294253920e8d">
+      <ID>Playlist</ID>
+      <Name>Playlist</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="70b6ab90-ca73-4974-beb7-f6a9bd409272">
+          <ID>Recuento Playlist</ID>
+          <Name>Recuento Playlist</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3d1494d2-5115-4232-a616-ab2a06ae521d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f3bccd6e-bbbb-4d17-acf7-bad964ee1768">
+              <TableID>dbo_Playlist</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="216aa75a-51f3-4f75-88c1-9c782e10b4e6">
+          <CubeDimensionID>Playlist</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="936d268b-04c1-47e2-a26f-b8f4d77dfa0c">
+              <AttributeID>Playlist Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4805e895-0cea-4d87-82cf-a70eb59690e7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d9ee049a-230a-4313-b7a3-11465d48a81b">
+                    <TableID>dbo_Playlist</TableID>
+                    <ColumnID>PlaylistId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="af93aa72-248c-457f-bffb-876b088d2aac">
+      <ID>Invoice</ID>
+      <Name>Invoice</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c40c66a4-f9b1-4ac8-9125-ad71496eac9f">
+          <ID>Total</ID>
+          <Name>Total</Name>
+          <Source dwd:design-time-name="e8ee621a-fbb0-4b77-90be-4edd3c69298f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8c9491b4-6feb-49cb-89f6-5f3059b707c6">
+              <TableID>dbo_Invoice</TableID>
+              <ColumnID>Total</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7ed51eef-b532-4c1a-9ba5-b6c38b8a84f7">
+          <ID>Recuento Invoice</ID>
+          <Name>Recuento Invoice</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="aa710498-e6aa-42d6-ac84-402356ea807e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f329a92e-0967-437e-9226-ac6da28b8389">
+              <TableID>dbo_Invoice</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d8a10c2f-2899-4df9-8a5d-0b5efe850f49">
+          <CubeDimensionID>Invoice</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5aab5a80-5161-4e95-80db-9e4aadf06221">
+              <AttributeID>Invoice Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="efd68765-ba75-45dd-8be4-a46190de5f7f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8cf59417-31fe-43fe-8e18-33ebba0ed17b">
+                    <TableID>dbo_Invoice</TableID>
+                    <ColumnID>InvoiceId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a526e2a5-6369-49f7-8588-c35178dbdaa0">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f0ba3cf6-8c01-4d0c-8e9d-f24f9ea58512">
+              <AttributeID>Customer Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3fc32231-be66-4635-99b1-9df8f9d7149a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="204aeaa2-cd0a-4b21-bb9c-32218a178137">
+                    <TableID>dbo_Invoice</TableID>
+                    <ColumnID>CustomerId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="04bb044b-7c38-49d3-880b-cbdeb230c2ba">
+      <ID>Artist</ID>
+      <Name>Artist</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="645e2ed6-1fa2-456c-9240-913092f1bfa6">
+          <ID>Recuento Artist</ID>
+          <Name>Recuento Artist</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6367a941-30b6-49de-91f7-170f37d7dcf1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6f33fbbe-ff7d-4280-8a71-2b96fab2d04b">
+              <TableID>dbo_Artist</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e88e636c-09e5-4b6a-9b41-31bd130e2de2">
+          <CubeDimensionID>Artist</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a4c950b9-29c5-4f9d-a915-19deea653e94">
+              <AttributeID>Artist Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8a986ad6-7e30-4a7f-8d0f-672a0f5e03d1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9ece2e0-901e-43a8-bbe5-11de89b6be8f">
+                    <TableID>dbo_Artist</TableID>
+                    <ColumnID>ArtistId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9bf78c5c-b7d2-495a-ad4b-2ca8dd371484">
+    <DataSourceViewID>Chinook</DataSourceViewID>
+  </Source>
+</Cube>

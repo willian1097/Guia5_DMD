@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Analisis_Guia5</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>d2vprm22n01tGhYf88pDYYrNuOI=18/09/2020 15:16:4418/09/2020 15:16:44</TimeStamp>
+        <ID>
+          <String>Chinook</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>nVBeE4c9vnrjJNEAOcmUOYxnjRA=18/09/2020 17:15:1518/09/2020 17:15:15</TimeStamp>
+        <ID>
+          <String>Chinook</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2m8Ah3cvBOK7uUCeXDqL7TVd5wU=18/09/2020 17:23:5318/09/2020 17:23:53</TimeStamp>
+        <ID>
+          <String>Album</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2r51njRvpln4jwTNPmU1038gfiA=18/09/2020 17:23:5318/09/2020 17:23:53</TimeStamp>
+        <ID>
+          <String>Genre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lEGDTyE9v9aYRfZTqWKd7WZUPDA=18/09/2020 17:23:5318/09/2020 17:23:53</TimeStamp>
+        <ID>
+          <String>Media Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9XDBeuxFXwzUcxxhTAcLP7RcbMA=18/09/2020 17:28:1818/09/2020 17:28:18</TimeStamp>
+        <ID>
+          <String>Playlist</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iuRnFYIv1f1Eed9gphhOXBpHmVM=18/09/2020 17:28:1818/09/2020 17:28:18</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7u6YsmLWgUuJeRb/I+Lvkwvj0m0=18/09/2020 17:28:1818/09/2020 17:28:18</TimeStamp>
+        <ID>
+          <String>Invoice</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8c86jOtG6R/zL3rw8qUoHKIswTw=18/09/2020 17:28:1818/09/2020 17:28:18</TimeStamp>
+        <ID>
+          <String>Artist</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>se+nBC/+T614ZTcOw4WHesPsRvo=18/09/2020 17:28:1818/09/2020 17:28:18</TimeStamp>
+        <ID>
+          <String>Employee</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>lxXipWikStWKRDaKn+6aOWDKZJo=18/09/2020 17:28:1818/09/2020 17:28:18miNSHaIhBUfHHVzva94i4wghzH8=18/09/2020 17:28:1818/09/2020 17:28:18</TimeStamp>
+        <ID>
+          <String>Chinook</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>5Ta8ictAOSO63k89lyEc/X+ZtYk=18/09/2020 15:08:4618/09/2020 15:08:46</TimeStamp>
+      <ID>
+        <String>Analisis_Guia5</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-09-18T23:29:23.036667Z</LastDeployed>
+</DeploymentSnapshot>
